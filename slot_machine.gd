@@ -1,14 +1,14 @@
 extends Node2D
 
-@export var win_chance = 0.2
+@export var win_chance = 0.235
 @export var low_bank_win_mult = 1.25
 @export var low_bank_threshold = 300
-@export var min_bank_win_mult = 1.5
+@export var min_bank_win_mult = 2
 @export var min_bank_threshold = 150
 @export var weights = [8, 5, 4, 2.4, 0.5, 0.1]
-@export var winnings = [2, 4, 6, 8, 15, 30]
+@export var winnings = [2, 3, 5, 8, 12, 20]
 @export var bet = 50
-@export var very_close = 0.2
+@export var very_close = 0.3
 @export var reward_order = [1,4,2,5,6,3]
 @export var two_similar = 0.6
 @export var amount = 1000
@@ -121,7 +121,7 @@ func _on_animation_player_animation_finished(anim_name: StringName) -> void:
 	if anim_name != "Roll" and anim_name != "RESET":
 		update_text()
 		if win == true:
-			if success_number <= 1:
+			if success_number <= 2:
 				$Reward.play("Small")
 			elif success_number <= 4:
 				$Reward.play("Medium")

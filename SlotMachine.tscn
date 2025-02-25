@@ -1536,7 +1536,7 @@ tracks/6/keys = {
 
 [sub_resource type="Animation" id="Animation_ba7h7"]
 resource_name = "Small"
-length = 1.5
+length = 1.3
 step = 0.1
 tracks/0/type = "value"
 tracks/0/imported = false
@@ -1545,7 +1545,7 @@ tracks/0/path = NodePath("Visual:scale")
 tracks/0/interp = 2
 tracks/0/loop_wrap = true
 tracks/0/keys = {
-"times": PackedFloat32Array(0, 0.2, 0.3, 0.4, 0.5, 0.7, 0.8, 1.3, 1.5),
+"times": PackedFloat32Array(0, 0.2, 0.3, 0.4, 0.5, 0.7, 0.8, 1.1, 1.3),
 "transitions": PackedFloat32Array(1, 1, 1, 1, 1, 1, 1, 1, 1),
 "update": 0,
 "values": [Vector2(1e-05, 1e-05), Vector2(1, 1), Vector2(1, 1), Vector2(0.75, 0.75), Vector2(1, 1), Vector2(0.75, 0.75), Vector2(1, 1), Vector2(1, 1), Vector2(0, 0)]
@@ -1557,10 +1557,10 @@ tracks/1/path = NodePath("Visual:rotation")
 tracks/1/interp = 4
 tracks/1/loop_wrap = true
 tracks/1/keys = {
-"times": PackedFloat32Array(0, 0.2, 0.4, 0.8, 1, 1.1),
-"transitions": PackedFloat32Array(1, 1, 1, 1, 1, 1),
+"times": PackedFloat32Array(0, 1.3),
+"transitions": PackedFloat32Array(1, 1),
 "update": 0,
-"values": [0.0, 0.0, 0.349066, -0.349066, 0.174533, 0.0]
+"values": [0.0, 0.0]
 }
 tracks/2/type = "value"
 tracks/2/imported = false
@@ -1569,10 +1569,10 @@ tracks/2/path = NodePath("Line2D:points")
 tracks/2/interp = 2
 tracks/2/loop_wrap = true
 tracks/2/keys = {
-"times": PackedFloat32Array(0, 0.1, 0.2, 0.4, 0.5, 0.7, 0.9, 1, 1.2, 1.5),
-"transitions": PackedFloat32Array(1, 1, 1, 1, 1, 1, 1, 1, 1, 1),
+"times": PackedFloat32Array(0, 0.1, 0.2, 0.4, 0.5, 0.7, 0.9, 1, 1.3),
+"transitions": PackedFloat32Array(1, 1, 1, 1, 1, 1, 1, 1, 1),
 "update": 0,
-"values": [PackedVector2Array(-191, 200, -140, 200, -100, 200, -60, 200, -20, 200, 10, 200, 30, 200, 70, 200, 100, 200, 130, 200, 170, 200, 220, 200), PackedVector2Array(-190, 200, -140, 200, -100, 200, -60, 200, -20, 200, 10, 200, 30, 200, 70, 200, 100, 200, 130, 200, 170, 200, 222, 200), PackedVector2Array(-192, 200, -145, 194, -110, 206, -78, 193, -33, 200, 4, 191, 32, 207, 68, 191, 106, 193, 138, 190, 169, 207, 221, 200), PackedVector2Array(-190, 200, -143, 204, -117, 197, -76, 201, -40, 194, 3, 201, 29, 186, 71, 199, 97, 176, 143, 198, 176, 192, 219, 200), PackedVector2Array(-191, 200, -142, 217, -116, 203, -90, 176, -54, 206, -12, 181, 26, 202, 58, 178, 91, 199, 123, 182, 174, 209, 220, 200), PackedVector2Array(-189, 200, -145, 192, -121, 206, -78, 211, -60, 189, -13, 192, 21, 187, 56, 200, 92, 208, 132, 202, 171, 187, 219, 200), PackedVector2Array(-190, 200, -143, 205, -110, 166, -63, 185, -18, 177, 5, 195, 33, 214, 58, 188, 105, 220, 131, 194, 172, 205, 221, 200), PackedVector2Array(-192, 200, -145, 203, -108, 197, -70, 207, -39, 190, 8, 202, 30, 197, 69, 204, 105, 187, 137, 205, 169, 195, 220, 200), PackedVector2Array(-190, 200, -140, 200, -100, 200, -60, 200, -20, 200, 10, 200, 30, 200, 70, 200, 100, 200, 130, 200, 170, 200, 220, 200), PackedVector2Array(-190, 200, -140, 200, -100, 200, -60, 200, -20, 200, 10, 200, 30, 200, 70, 200, 100, 200, 130, 200, 170, 200, 220, 200)]
+"values": [PackedVector2Array(-191, 200, -140, 200, -100, 200, -60, 200, -20, 200, 10, 200, 30, 200, 70, 200, 100, 200, 130, 200, 170, 200, 220, 200), PackedVector2Array(-190, 200, -140, 200, -100, 200, -60, 200, -20, 200, 10, 200, 30, 200, 70, 200, 100, 200, 130, 200, 170, 200, 222, 200), PackedVector2Array(-192, 200, -145, 194, -110, 206, -78, 193, -33, 200, 4, 191, 32, 207, 68, 191, 106, 193, 138, 190, 169, 207, 221, 200), PackedVector2Array(-190, 200, -143, 204, -117, 197, -76, 201, -40, 194, 3, 201, 29, 186, 71, 199, 97, 176, 143, 198, 176, 192, 219, 200), PackedVector2Array(-191, 200, -142, 217, -116, 203, -90, 176, -54, 206, -12, 181, 26, 202, 58, 178, 91, 199, 123, 182, 174, 209, 220, 200), PackedVector2Array(-189, 200, -145, 192, -121, 206, -78, 211, -60, 189, -13, 192, 21, 187, 56, 200, 92, 208, 132, 202, 171, 187, 219, 200), PackedVector2Array(-190, 200, -143, 205, -110, 166, -63, 185, -18, 177, 5, 195, 33, 214, 58, 188, 105, 220, 131, 194, 172, 205, 221, 200), PackedVector2Array(-190, 200, -140, 200, -100, 200, -60, 200, -20, 200, 10, 200, 30, 200, 70, 200, 100, 200, 130, 200, 170, 200, 220, 200), PackedVector2Array(-190, 200, -140, 200, -100, 200, -60, 200, -20, 200, 10, 200, 30, 200, 70, 200, 100, 200, 130, 200, 170, 200, 220, 200)]
 }
 tracks/3/type = "value"
 tracks/3/imported = false
@@ -1581,10 +1581,10 @@ tracks/3/path = NodePath("Line2D:width")
 tracks/3/interp = 2
 tracks/3/loop_wrap = true
 tracks/3/keys = {
-"times": PackedFloat32Array(0, 0.1, 0.4, 1, 1.2, 1.3),
-"transitions": PackedFloat32Array(1, 1, 1, 1, 1, 1),
+"times": PackedFloat32Array(0, 0.1, 0.4, 1, 1.1),
+"transitions": PackedFloat32Array(1, 1, 1, 1, 1),
 "update": 0,
-"values": [0.0, 20.0, 20.0, 20.0, 20.0, 0.0]
+"values": [0.0, 20.0, 20.0, 20.0, 0.0]
 }
 tracks/4/type = "value"
 tracks/4/imported = false
@@ -1593,7 +1593,7 @@ tracks/4/path = NodePath("GPUParticles2D:emitting")
 tracks/4/interp = 1
 tracks/4/loop_wrap = true
 tracks/4/keys = {
-"times": PackedFloat32Array(0, 0.1, 1.2, 1.3),
+"times": PackedFloat32Array(0, 0.1, 1, 1.1),
 "transitions": PackedFloat32Array(1, 1, 1, 1),
 "update": 1,
 "values": [false, true, true, false]
@@ -1847,18 +1847,21 @@ offset_top = -2.0
 offset_right = 1152.0
 offset_bottom = 179.0
 texture = SubResource("GradientTexture2D_hdkqx")
+metadata/_edit_use_anchors_ = true
 
 [node name="Bottom" type="TextureRect" parent="Background"]
 offset_top = 409.0
 offset_right = 1152.0
 offset_bottom = 707.0
 texture = SubResource("GradientTexture2D_vn68i")
+metadata/_edit_use_anchors_ = true
 
 [node name="Left" type="TextureRect" parent="Background"]
 offset_top = -2.0
 offset_right = 322.0
 offset_bottom = 648.0
 texture = SubResource("GradientTexture2D_rh4am")
+metadata/_edit_use_anchors_ = true
 
 [node name="Right" type="TextureRect" parent="Background"]
 offset_left = 815.0
@@ -1866,6 +1869,7 @@ offset_top = -2.0
 offset_right = 1152.0
 offset_bottom = 648.0
 texture = SubResource("GradientTexture2D_rh4am")
+metadata/_edit_use_anchors_ = true
 
 [node name="Back" type="TextureRect" parent="Background"]
 z_index = -1
@@ -1874,6 +1878,7 @@ offset_top = 181.0
 offset_right = 790.0
 offset_bottom = 408.0
 texture = SubResource("GradientTexture2D_n866s")
+metadata/_edit_use_anchors_ = true
 
 [node name="Panel" type="Panel" parent="."]
 offset_left = 345.0
@@ -1881,6 +1886,7 @@ offset_top = 451.0
 offset_right = 795.0
 offset_bottom = 555.0
 theme_override_styles/panel = SubResource("StyleBoxFlat_xxkkd")
+metadata/_edit_use_anchors_ = true
 
 [node name="Amount" type="Label" parent="."]
 offset_left = 360.0
@@ -1891,6 +1897,7 @@ theme_override_font_sizes/font_size = 60
 text = "$500"
 horizontal_alignment = 1
 vertical_alignment = 1
+metadata/_edit_use_anchors_ = true
 
 [node name="Button" type="Button" parent="."]
 offset_left = 451.0
@@ -1902,6 +1909,7 @@ theme_override_styles/hover = SubResource("StyleBoxFlat_j0uhk")
 theme_override_styles/pressed = SubResource("StyleBoxFlat_p2tdg")
 theme_override_styles/normal = SubResource("StyleBoxFlat_j0uhk")
 text = "SPIN!!! ($50)"
+metadata/_edit_use_anchors_ = true
 
 [node name="Reward" type="AnimationPlayer" parent="."]
 libraries = {
@@ -1978,6 +1986,7 @@ offset_bottom = 136.0
 grow_horizontal = 2
 grow_vertical = 2
 scale = Vector2(1e-05, 1e-05)
+metadata/_edit_use_anchors_ = true
 
 [node name="RewardVisual" type="Panel" parent="Visual"]
 z_index = 9
@@ -1994,6 +2003,7 @@ offset_bottom = 77.5
 grow_horizontal = 2
 grow_vertical = 2
 theme_override_styles/panel = SubResource("StyleBoxFlat_aha5j")
+metadata/_edit_use_anchors_ = true
 
 [node name="Label" type="RichTextLabel" parent="Visual/RewardVisual"]
 layout_mode = 1
@@ -2008,6 +2018,7 @@ bbcode_enabled = true
 text = "[wave connected=0 amp=75][shake level=3][rainbow speed=2.5 freq=0.8][center]$100"
 scroll_active = false
 autowrap_mode = 0
+metadata/_edit_use_anchors_ = true
 
 [connection signal="animation_finished" from="3/AnimationPlayer" to="." method="_on_animation_player_animation_finished"]
 [connection signal="pressed" from="Button" to="." method="_on_button_pressed"]
